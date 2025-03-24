@@ -4,11 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <style>
+        /*
+        player-1:  #FFa725;
+        player-2:  #FF4E50;
+        */
+        .body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e4;
+        }
+         .app name {
+          text-align: center;
+         }
+         .board {
+            border: 10px double black;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 50px  auto;
+            width: 500px;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            border-radius: 40px;
+            background-color: #fff;
+         }
+          .cell {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            margin: 2px;
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+           .cell-p1 {
+           background-color:#FFa725 ;
+           }
+           .cell-p2 {
+            background-color:#FF4E50 ;
+
+           }
+           .cell:hover {
+            transition: 0.3s;
+            cursor: pointer;
+            box-shadow: 0 0 10px 0 #000;
+           }
+    </style>
     </head>
     <body>
-        <h1>Tic Tac Toe</h1>
+        <h1 class="app name">Tic Tac Toe</h1>
+        <div class="board" id="board">
+            <div class="cell cell-p1"></div>
+            <div class="cell cell-p2"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            
+        </div>
         <script>
             const board = [-1 -1-1 -1 -1 -1 -1 -1 -1 -1];
+            function  renderBoard() {
+                const boardElement=document.getElementById('board');
+                boardElement.innerHTML ='';
+                board.forEach{((boardElement,index)=>{
+
+                 ) }
+            }
         </script>
     </body>
     </html>
